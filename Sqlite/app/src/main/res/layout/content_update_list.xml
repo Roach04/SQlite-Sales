@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@color/background"
+    tools:showIn="@layout/activity_update_list"
+    tools:context="com.project.me.near.sqlite.UpdateList">
+
+    <ImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/imageView5"
+        android:layout_gravity="center"
+        android:src="@drawable/update"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextNN"
+        android:hint="Names"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imageView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextEE"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editTextNN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextPP"
+        android:hint="Number"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editTextEE"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes."
+        android:background="@color/listBack"
+        android:onClick="updates"
+        android:textColor="@color/colorText"
+        android:id="@+id/button4"
+        android:layout_below="@+id/editTextPP"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp" />
+</RelativeLayout>
